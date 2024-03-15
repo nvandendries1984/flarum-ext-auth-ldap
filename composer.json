@@ -1,0 +1,31 @@
+{
+	"name": "nvandendries1984/flarum-ext-auth-ldap",
+	"description": "Allow users to log in through LDAP.",
+	"type": "flarum-extension",
+	"keywords": ["authentication"],
+	"license": "MIT",
+	"authors": [{
+		"name": "Niels van den Dries",
+		"email": "niels@pocos.nl"
+	}],
+	"minimum-stability": "alpha",
+	"require": {
+		"flarum/core": "^1.0",
+		"directorytree/ldaprecord": "v2.11.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Nielsvandendries\\Flarum\\Auth\\LDAP\\": "src/"
+		}
+	},
+	"extra": {
+		"flarum-extension": {
+			"title": "LDAP login",
+			"icon": {
+				"name": "far fa-address-book",
+				"backgroundColor": "#b15959",
+				"color": "#fff"
+			}
+		}
+	}
+}
